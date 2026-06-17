@@ -1,21 +1,27 @@
-# Active Directory Threat Emulation Lab
+# Threat Detection Assessment Lab
 
-## Objective
-Build a small Active Directory environment and safely emulate real-world attack techniques in a controlled lab.
-
-## Technologies
-- VirtualBox
-- Windows Server 2022
-- Windows 10/11 Client
-- Kali Linux
-- MITRE ATT&CK
-- PowerShell
-- Wireshark
+This project demonstrates threat emulation, attack chain analysis, detection engineering, and security documentation using MITRE ATT&CK methodologies.
 
 ## Skills Demonstrated
-- Active Directory Administration
+
 - Threat Emulation
-- Privilege Escalation
-- Credential Attacks
+- MITRE ATT&CK Mapping
 - Detection Engineering
-- Incident Documentation
+- Security Analysis
+- Incident Response
+- Security Documentation
+
+## Technologies & Frameworks
+
+- MITRE ATT&CK
+- Sigma Rules
+- Windows Event Analysis
+- Threat Detection Concepts
+- Security Operations
+
+## Repository Structure
+
+attack-emulation/
+detection-rules/
+documentation/
+screenshots/
