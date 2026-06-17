@@ -2,6 +2,10 @@
 
 This project demonstrates threat emulation, attack chain analysis, detection engineering, and security documentation using MITRE ATT&CK methodologies.
 
+## Project Objective
+
+This project simulates a phishing-based attack chain and demonstrates how an attacker may leverage PowerShell execution, account discovery, and data collection techniques. The project maps attacker behavior to the MITRE ATT&CK framework and develops Sigma detection rules to identify malicious activity.
+
 ## Skills Demonstrated
 
 - Threat Emulation
@@ -21,12 +25,13 @@ This project demonstrates threat emulation, attack chain analysis, detection eng
 
 ## Repository Structure
 
+```text
 attack-notes/
 detection-notes/
 detection-rules/
 documentation/
 screenshots/
-
+```
 
 ## Threat Emulation Workflow
 
@@ -38,3 +43,12 @@ C --> D[Account Discovery]
 D --> E[Data Collection]
 E --> F[Detection Rule Triggered]
 ```
+
+## MITRE ATT&CK Techniques
+
+| Technique ID | Technique Name |
+|-------------|---------------|
+| T1566.001 | Phishing: Spearphishing Attachment |
+| T1059.001 | PowerShell |
+| T1087 | Account Discovery |
+| T1005 | Data from Local System |
