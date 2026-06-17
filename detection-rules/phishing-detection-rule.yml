@@ -1,0 +1,27 @@
+title: Office Application Spawning PowerShell
+
+id: phishing-detection-001
+
+status: experimental
+
+description: Detects Microsoft Office applications spawning PowerShell.
+
+logsource:
+  product: windows
+
+detection:
+  selection:
+    ParentImage:
+      - '*WINWORD.EXE'
+      - '*EXCEL.EXE'
+    Image:
+      - '*powershell.exe'
+
+  condition: selection
+
+level: high
+
+tags:
+  - attack.execution
+  - attack.t1204
+  - attack.t1566
