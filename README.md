@@ -21,7 +21,20 @@ This project demonstrates threat emulation, attack chain analysis, detection eng
 
 ## Repository Structure
 
-attack-emulation/
+attack-notes/
+detection-notes/
 detection-rules/
 documentation/
 screenshots/
+
+
+## Threat Emulation Workflow
+
+```mermaid
+flowchart LR
+A[Phishing Email] --> B[User Opens Attachment]
+B --> C[PowerShell Execution]
+C --> D[Account Discovery]
+D --> E[Data Collection]
+E --> F[Detection Rule Triggered]
+```
